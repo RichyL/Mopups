@@ -22,4 +22,6 @@ public interface IPopupNavigation
     Task PopAllAsync(bool animate = true);
 
     Task RemovePageAsync(PopupPage page, bool animate = true);
+
+    Task PushAsync<T>(PopupPage page, T viewModel, bool animate = true);
 }

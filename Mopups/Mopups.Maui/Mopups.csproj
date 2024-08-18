@@ -10,8 +10,10 @@
 		<UseMauiEssentials>true</UseMauiEssentials>
 		<SingleProject>true</SingleProject>
 		<PackageId>Mopups</PackageId>
-		<Description>Popups for MAUI</Description>
-		<PackageProjectUrl>https://github.com/LuckyDucko/Mopups</PackageProjectUrl>
+		<Description>Popups for MAUI
+
+Modified version of the project at https://github.com/LuckyDucko/Mopups</Description>
+		<PackageProjectUrl></PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
@@ -29,12 +31,13 @@
 		<PackageTags>Mopups;Popups;Maui;rg;Xamarin;ios;android;Windows;MacOS;Mopups;Dialogs;macos;windows</PackageTags>
 		<Version>1.3.0</Version>
 		<Title>Mopups (Maui Popups)</Title>
-		<PackageReleaseNotes>Added in several fixes from the community (THANKYOU!)
-
-Upgraded to .NET 8</PackageReleaseNotes>
+		<PackageReleaseNotes>Forked Mopups for this project</PackageReleaseNotes>
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PublishAot>True</PublishAot>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<RepositoryUrl>https://github.com/RichyL/GymTimer</RepositoryUrl>
 	</PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
     <PlatformTarget>AnyCPU</PlatformTarget>

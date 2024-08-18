@@ -84,6 +84,12 @@ public class PopupNavigation : IPopupNavigation
         };
     }
 
+    public Task PushAsync<T>(PopupPage page, T viewModel, bool animate = true)
+    {
+        page.BindingContext = viewModel;
+        return PushAsync(page, animate);
+    }
+
     public async Task PopAllAsync(bool animate = true)
     {
 		animate = animate && Animations.AnimationHelper.SystemAnimationsEnabled;
